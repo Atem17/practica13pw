@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Importamos Google Icons Font -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Importamos Materialize.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!-- Permitimos que el navegador se optimice para dispositivos Móviles -->
+    <link type="text/css" rel="stylesheet" href="/css/materialize.css" media="screen,projection">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Materialize</title>
+</head>
+<body>
+    <nav>
+        <div class="nav_wrapper">
+            <ul id="nav_mobile" class="left_on_med_and_down">
+                <li> <a href="sass.html">Inicio</a></li>
+                <li><a href="badges.html">Servivios</a></li>
+                <li><a href="collapsible.html">Blogs</a></li>
+                <!--Activador desplegable-->
+                <li><a class="dropdown-trigger" href="#!" data-target="dropdown1">Menu <i class="material-icons right">arrow_drop_down</i></a></li>
+            </ul>
+        </div>
+    </nav>
+    <br>
+    <h1 class="titulo">Tabla descriptiva de productos</h1> <hr>
+    <br>
+    <div class="container">
+        <table class="highlight centered responsive-table">
+            <!--codigo con configuracion para la cabecera de la tabla-->
+            <thead class="lime-text"> <!--se define el color de la letra aumentando terminacion -text-->
+                <tr>
+                    <th>Nombre</th>
+                    <th>Nombre del Articulo</th>
+                    <th>Nombre del Precio</th>
+                </tr>  
+            </thead>
+            <!--codigo para el cuerpo de la tabla-->
+            <tbody class="green-text"><!--se define el color de la letra aumentando la terminacion _text-->
+                <tr>
+                    <td>Alvin</td>
+                    <td>Laptop</td>
+                    <td>$800.00</td>
+                </tr>
+                <tr>
+                    <td>Alan</td>
+                    <td>Mouse</td>
+                    <td>$14.00</td>
+                </tr>
+                <tr>
+                    <td>Jonatha</td>
+                    <td>Teclado</td>
+                    <td>$25.00</td>
+                </tr>
+                <tr>
+                    <td>Azucena</td>
+                    <td>USB 128GB</td>
+                    <td>$12.50</td>
+                </tr>
+                <tr>
+                    <td>Karla</td>
+                    <td>Bocina</td>
+                    <td>$8.00</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <br>
+    <div class="container center">
+        <!--boton con color lime y texto verde-->
+        <button class="btn waves-effect waves-light lime green-text" type="submit" name="action">
+            Enviar
+            <i class="material-icons right">send</i>
+        </button>
+        <!--enlace con color naranja, texto verde y icono de carga-->
+        <a class="waves-effect waves-light btn orange lime-text">
+            <i class="material-icons left">cloud_upload</i>
+            Cargar
+        </a>
+    </div>
+    <br>
+
+    <footer class="page-footer">
+        <div class="container">
+            <!--primera fila del pie de pagina-->
+            <div class="row">
+                <div class="col 12 s10"><br>
+                    <h5 class="white-text">Dejanos Ayudarte</h5>
+                    <p class="grey-text text-lighten-4">Ayudamos a los clientes a acceder rápidamente a la información del servicio de atención al cliente, y a los métodos de pago.</p> 
+                </div>
+                <div class="col 14 offset-12 s12">
+                    <h5 class="white-text">Información de Contacto</h5>
+                    <ul>
+                        <li><a class="grey-text text- lighten-3" href="#!">Busca un distribuidor</a></li>
+                        <li><a class="grey-text text- lighten-3" href="#!">Compra Online</a></li>
+                        <li><a class="grey-text text- lighten-3" href="#!">Comunidad</a></li>
+                        <li><a class="grey-text text- lighten-3" href="#!">Noticias e Información</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!--segunda fila del pie de página-->
+        <div class="footer-copyright">
+            <div class="container">
+                2023 Notebook__Tecnology
+            </div>
+        </div>
+    </footer>
+
+    <!--JavaScript ira al final del body para optimizar su implementación-->
+    <script type="text/javascript" src="/js/materialize.js"></script>
+</body>
+</html>
